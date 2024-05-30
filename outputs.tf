@@ -1,7 +1,7 @@
-# output "subscription_info" {
-#   value       = local.data.subscription.id
-#   description = "The ID and name of the subscription"
-# }
+output "subscription_info" {
+  value       = var.subscription_id
+  description = "The ID and name of the subscription"
+}
 
 output "all_resource_groups" {
   value       = module.foundation
