@@ -4,10 +4,10 @@ locals {
 }
 module "foundation" {
   source  = "app.terraform.io/hcta-azure-dev/foundation/azurerm"
-  version = "1.0.0"
+  version = "1.0.2"
 
   resource_groups = local.data.resource_groups
-  subscription_id = local.data.subscription.id 
+  #subscription_id = local.data.subscription.id 
 }
 
 module "vnet" {
