@@ -22,6 +22,6 @@ module "vnet" {
   tags           = each.value.tags
   subnets        = each.value.subnets
 
-  depends_on = [module.resource_group]
+  depends_on = [module.foundation]
 
 }
