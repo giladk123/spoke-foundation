@@ -18,7 +18,7 @@ module "vnet" {
   vnet_name      = each.value.vnet_name
   address_space  = each.value.address_space
   location       = each.value.location
-  resource_group = lookup(module.resource_group.rg_name, "${each.value.resource_group_name}", "")
+  resource_group = lookup(module.foundation.rg_name, "${each.value.resource_group_name}", "")
   tags           = each.value.tags
   subnets        = each.value.subnets
 
