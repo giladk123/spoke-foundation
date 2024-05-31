@@ -10,7 +10,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "58d48d30-bf14-416f-92ed-254430cc6772"
+  subscription_id = "305f81c7-dc9e-4f49-97f7-edea3620656d"
 }
 
 # // Define the default Azure provider
