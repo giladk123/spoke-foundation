@@ -1,7 +1,3 @@
-# output "subscription_info" {
-#   value       = subscription_id
-#   description = "The ID and name of the subscription"
-# }
 
 output "all_resource_groups" {
   value       = module.foundation

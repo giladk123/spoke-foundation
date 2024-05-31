@@ -7,7 +7,6 @@ module "foundation" {
   version = "1.0.2"
 
   resource_groups = local.data.resource_groups
-  #subscription_id = local.data.subscription.id 
 }
 
 module "vnet" {
