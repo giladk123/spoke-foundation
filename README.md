@@ -13,8 +13,8 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_foundation"></a> [foundation](#module\_foundation) | app.terraform.io/hcta-azure-dev/foundation/azurerm | 1.0.2 |
 | <a name="module_log_analytics_workspace"></a> [log\_analytics\_workspace](#module\_log\_analytics\_workspace) | app.terraform.io/hcta-azure-dev/log_analytics_workspace/azurerm | 1.0.0 |
+| <a name="module_rg"></a> [rg](#module\_rg) | app.terraform.io/hcta-azure-dev/rg/azurerm | 1.0.0 |
 | <a name="module_vnet"></a> [vnet](#module\_vnet) | app.terraform.io/hcta-azure-dev/vnet/azurerm | 3.0.2 |
 
 ## Resources

@@ -1,6 +1,6 @@
 
 output "all_resource_groups" {
-  value       = module.foundation
+  value       = module.rg
   description = "All resource groups created by the resource_group module"
 }
 
