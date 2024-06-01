@@ -39,6 +39,6 @@ module "log_analytics_workspace" {
   internet_query_enabled      = local.log_analytics_workspace.internet_query_enabled
   tags                        = local.log_analytics_workspace.tags
 
-  depends_on = [module.resource_group]
+  depends_on = [module.foundation]
   
 }
