@@ -6,26 +6,32 @@ output "all_resource_groups" {
 
 output "vnet_id" {
   value = module.vnet.vnet.vnet_id
+  description = "value of the vnet_id output from the vnet module"
 }
 
 output "vnet_name" {
   value = module.vnet.vnet.vnet_name
+  description = "value of the vnet_name output from the vnet module"
 }
 
 output "subnet_ids" {
   value = module.vnet.vnet.subnet_ids
+  description = "value of the subnet_ids output from the vnet module"
 }
 
 output "specific_subnet_id" {
   value = lookup(module.vnet.vnet.subnet_ids, "blob", "")
+  description = "value of the specific_subnet_id output from the vnet module"
 }
 
 output "law_name" {
   value = module.log_analytics_workspace.law_name
+  description = "value of the law_name output from the log_analytics_workspace module"
 }
 
 output "law_id" {
   value = module.log_analytics_workspace.law_id
+  description = "value of the law_id output from the log_analytics_workspace module"
 }
 
 # Example of using the lookup function to get a specific resource group name and location
