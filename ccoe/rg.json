@@ -3,16 +3,6 @@
         "id": "305f81c7-dc9e-4f49-97f7-edea3620656d"
     },
     "resource_groups": {
-        "rg1": {
-            "rg_name": "arutzim",
-            "rg_location": "West Europe",
-            "region": "we",
-            "tnnt_env": "ydev",
-            "cmdb_prj": "opdx",
-            "rg_tags": {
-                "environment": "dev"
-            }
-        },
         "rg2": {
             "rg_name": "marketing",
             "rg_location": "West Europe",
