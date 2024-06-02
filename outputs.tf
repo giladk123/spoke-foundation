@@ -24,15 +24,16 @@ output "specific_subnet_id" {
   description = "value of the specific_subnet_id output from the vnet module"
 }
 
-output "law_name" {
-  value = module.log_analytics_workspace.law_name
-  description = "value of the law_name output from the log_analytics_workspace module"
+output "law_ids" {
+  value       = module.log_analytics_workspace.law_ids
+  description = "Map of the Log Analytics Workspace ids"
 }
 
-output "law_id" {
-  value = module.log_analytics_workspace.law_id
-  description = "value of the law_id output from the log_analytics_workspace module"
+output "law_names" {
+  value       = module.log_analytics_workspace.law_names
+  description = "Map of the Log Analytics Workspace names"
 }
+
 
 # Example of using the lookup function to get a specific resource group name and location
 # output "specific_resource_group_name" {
