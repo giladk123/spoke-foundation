@@ -1,28 +1,48 @@
 
 output "all_resource_groups" {
-  value       = module.rg
+  value       = try(module.rg, null)
   description = "All resource groups created by the resource_group module"
 }
 
 output "vnet_id" {
-  value = module.vnet.vnet.vnet_id
+  value       = try(module.vnet.vnet.vnet_id, null)
   description = "value of the vnet_id output from the vnet module"
 }
 
 output "vnet_name" {
-  value = module.vnet.vnet.vnet_name
+  value       = try(module.vnet.vnet.vnet_name, null)
   description = "value of the vnet_name output from the vnet module"
 }
 
 output "subnet_ids" {
-  value = module.vnet.vnet.subnet_ids
+  value       = try(module.vnet.vnet.subnet_ids, null)
   description = "value of the subnet_ids output from the vnet module"
 }
 
-output "specific_subnet_id" {
-  value = lookup(module.vnet.vnet.subnet_ids, "blob", "")
-  description = "value of the specific_subnet_id output from the vnet module"
-}
+# output "all_resource_groups" {
+#   value       = module.rg
+#   description = "All resource groups created by the resource_group module"
+# }
+
+# output "vnet_id" {
+#   value = module.vnet.vnet.vnet_id
+#   description = "value of the vnet_id output from the vnet module"
+# }
+
+# output "vnet_name" {
+#   value = module.vnet.vnet.vnet_name
+#   description = "value of the vnet_name output from the vnet module"
+# }
+
+# output "subnet_ids" {
+#   value = module.vnet.vnet.subnet_ids
+#   description = "value of the subnet_ids output from the vnet module"
+# }
+
+# output "specific_subnet_id" {
+#   value = lookup(module.vnet.vnet.subnet_ids, "blob", "")
+#   description = "value of the specific_subnet_id output from the vnet module"
+# }
 
 output "law_ids" {
   value       = module.log_analytics_workspace.law_ids
