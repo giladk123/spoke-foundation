@@ -27,19 +27,19 @@ module "vnet" {
 
 }
 
-module "log_analytics_workspace" {
-  source  = "app.terraform.io/hcta-azure-dev/log_analytics_workspace/azurerm"
-  version = "1.0.0"
+# module "log_analytics_workspace" {
+#   source  = "app.terraform.io/hcta-azure-dev/log_analytics_workspace/azurerm"
+#   version = "1.0.0"
 
-  law_name                   = local.log_analytics_workspace.law_name
-  rg_location                = local.log_analytics_workspace.location
-  rg_name                    = local.log_analytics_workspace.resource_group_name
-  sku                        = local.log_analytics_workspace.sku
-  retention_in_days          = local.log_analytics_workspace.retention_in_days
-  internet_ingestion_enabled = local.log_analytics_workspace.internet_ingestion_enabled
-  internet_query_enabled     = local.log_analytics_workspace.internet_query_enabled
-  tags                       = local.log_analytics_workspace.tags
+#   law_name                   = local.log_analytics_workspace.law_name
+#   rg_location                = local.log_analytics_workspace.location
+#   rg_name                    = local.log_analytics_workspace.resource_group_name
+#   sku                        = local.log_analytics_workspace.sku
+#   retention_in_days          = local.log_analytics_workspace.retention_in_days
+#   internet_ingestion_enabled = local.log_analytics_workspace.internet_ingestion_enabled
+#   internet_query_enabled     = local.log_analytics_workspace.internet_query_enabled
+#   tags                       = local.log_analytics_workspace.tags
 
-  depends_on = [module.rg]
+#   depends_on = [module.rg]
 
-}
+# }
