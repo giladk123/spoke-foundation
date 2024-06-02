@@ -34,11 +34,6 @@ output "law_id" {
   description = "value of the law_id output from the log_analytics_workspace module"
 }
 
-# output "subscription_id" {
-#   value       = module.subscription.subscription_id
-#   description = "The ID of the created subscription."
-# }
-
 # Example of using the lookup function to get a specific resource group name and location
 # output "specific_resource_group_name" {
 #   description = "The name of a specific resource group"

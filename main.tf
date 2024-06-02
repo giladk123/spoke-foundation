@@ -1,19 +1,8 @@
 locals {
   data                    = jsondecode(file("./ccoe/rg.json"))
   vnet_settings           = jsondecode(file("./network/network.json"))
-  log_analytics_workspace = jsondecode(file("./ccoe/log_analytics_workspace.json"))
-  subscription            = jsondecode(file("./ccoe/subscription.json"))  
+  log_analytics_workspace = jsondecode(file("./ccoe/log_analytics_workspace.json")) 
 }
-
-# module "subscription" {
-#   source  = "app.terraform.io/hcta-azure-dev/subscription/azurerm"
-#   version = "1.0.0"
-
-#   subscription_name    = local.subscription.subscription_name
-#   billing_account_name = local.subscription.billing_account_name
-#   billing_profile_name = local.subscription.billing_profile_name
-#   invoice_section_name = local.subscription.invoice_section_name
-# }
 
 module "rg" {
   source  = "app.terraform.io/hcta-azure-dev/rg/azurerm"
