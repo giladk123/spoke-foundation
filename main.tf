@@ -32,8 +32,8 @@ module "log_analytics_workspace" {
   version = "1.0.0"
 
   law_name                   = local.log_analytics_workspace.law_name
-  rg_location                = lookup(module.rg.rg_location, "${local.log_analytics_workspace.location}", "")
-  rg_name                    = lookup(module.rg.rg_name, "${local.log_analytics_workspace.resource_group_name}", "")
+  rg_location                = local.log_analytics_workspace.location
+  rg_name                    = local.log_analytics_workspace.resource_group_name
   sku                        = local.log_analytics_workspace.sku
   retention_in_days          = local.log_analytics_workspace.retention_in_days
   internet_ingestion_enabled = local.log_analytics_workspace.internet_ingestion_enabled
