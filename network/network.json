@@ -11,10 +11,6 @@
         },
         "subnets": [
             {
-                "name": "crm",
-                "address_prefix": "10.60.0.0/26"
-            },
-            {
                 "name": "blob",
                 "address_prefix": "10.60.0.64/26"
             }
