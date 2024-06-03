@@ -9,16 +9,5 @@
             {"name": "blob", "address_prefix": "10.62.252.0/28"},
             {"name": "arutzim", "address_prefix": "10.62.252.16/28"}
         ]
-    },
-    "vnet2": {
-        "vnet_name": "we-ydev-azus-opdx-arutzim-vnet",
-        "resource_group_name": "we-ydev-azus-opdx-arutzim-rg",
-        "location": "westeurope",
-        "address_space": ["10.62.253.0/24"],
-        "tags": {"environment": "dev"},
-        "subnets": [
-            {"name": "subnet1", "address_prefix": "10.62.253.0/28"},
-            {"name": "subnet2", "address_prefix": "10.62.253.16/28"}
-        ]
     }
 }
